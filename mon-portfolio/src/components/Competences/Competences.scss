@@ -1,0 +1,10 @@
+#skills {
+    margin: 3em 0;
+    & .skills-div {
+        display: flex;
+        & figcaption {
+            text-align: center;
+            margin: 1em;
+        }
+    }
+}

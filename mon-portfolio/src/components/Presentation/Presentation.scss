@@ -1,0 +1,28 @@
+.banner {
+    margin: 3em 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    & .photo-de-profil {
+        border-radius: 50%;
+        max-width: 400px;
+        height: 100%;
+        width: 100%;
+    }
+    & .banner-div-titre {
+        margin: 0 1%;
+        width: 55%;
+        & .banner-h1 {
+        font-size: 3.7em;
+        background-color: bisque;
+        margin: auto;
+        }
+        & .banner-p {
+            text-align: justify;
+            font-size: large;
+        }
+    }
+    
+    
+}
