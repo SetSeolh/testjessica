@@ -2,11 +2,11 @@
     & .projects-div {
         margin: 3em 0;
         & article {
-            width: calc(33.333% - 27px);
+            width: 25vw;
+            height: 25vw;
+            overflow: hidden;
             & .project-article {
-
                     & .projet-img-button {
-                        object-fit: cover;
                         width: 100%;
                         border-radius: 18px;
                         padding: 1px;
