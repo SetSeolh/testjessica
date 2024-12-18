@@ -1,0 +1,15 @@
+.footer-nav {
+    text-align: end;
+    padding-right: 4em;
+    border-top: 1px solid;
+    & .footer-ul {
+        list-style-type: none;
+        & a {
+            text-decoration: none;
+            color: #000;
+        }
+        & a:hover {
+            text-decoration: underline;
+        }
+    }
+}

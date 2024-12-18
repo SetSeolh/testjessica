@@ -1,9 +1,7 @@
 #skills {
-    margin: 3em 2em;
-    & h2{
-        color: coral;
-    }
+    margin: 6em 2em;
     & .skills-div {
+        margin: 3em 0;
         display: flex;
         justify-content: space-evenly;
         & figure {
@@ -22,13 +20,18 @@
         }     
     }
     & .container {
+        margin: 3em 0;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        & .container, div {
+       
+        & .container-div { 
+            background-color: aliceblue;
             margin: 1rem;
+            padding: 1rem;
             text-align: justify;
+            color: #0000009f;
             & h3{
-            color: aquamarine;
+            color: #0000009f;
             } 
         }
         
@@ -74,9 +77,6 @@
         & .container {
             display: flex;
             flex-direction: column;
-            & .container, div{
-                border: 1em solid aliceblue;
-            }
         }
     }
 }

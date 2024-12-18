@@ -1,0 +1,24 @@
+#projects {
+    & .projects-div {
+        margin: 3em 0;
+        & article {
+            width: calc(33.333% - 27px);
+            & .project-article {
+
+                    & .projet-img-button {
+                        object-fit: cover;
+                        width: 100%;
+                        border-radius: 18px;
+                        padding: 1px;
+                    }
+                    & dialog {
+                        width: 50%;
+                        & .projet-img-modal {
+                            width: 100%;
+                        }
+                    }
+            }
+    }
+    }
+    
+}

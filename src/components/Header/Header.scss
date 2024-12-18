@@ -30,5 +30,54 @@ header {
         }
     }
     }
-    
+} /* ? ajout des icons, button avec img carrés, objectif-fit cover ne fonctionne pas */
+
+@media screen and (max-width:767px) {
+    header {
+        & .hamburger-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            width: 30px;
+            height: 30px;
+            & .hamburger-icon {
+                width: 100%;
+                height: 3px;
+                background-color: white;
+                border-radius: 5px;
+            }
+        }
+        & .header-nav {
+            display: flex;
+            position: static;
+            background: none;
+            flex-direction: row;
+            gap: 2rem;
+            padding: 0;
+            & .header-ul {
+                display: flex;
+                gap: 1rem;
+            }
+            & .header-ul li {
+                margin: 1rem 0;
+                &.header-ul li a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.2rem;
+                transition: color 0.3s;
+                }
+                &.header-ul li a:hover {
+                    color: #ff9800;
+                }
+            }
+            .hamburger-btn {
+                display: none;
+            }
+        }
+    }
+ 
 }

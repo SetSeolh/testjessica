@@ -1,16 +1,12 @@
 #projects {
-    margin: 3em 2em;
+    margin: 6em 2em;
     & .projects-div {
-        display: grid;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 2em;
+        /* display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 2em;
-        & .project-article {
-        height: 1fr;
-        width: 1fr;
-            & .project-article, img {
-            width: 100%;
-            }
-        }
+        gap: 2em; */
     }
 }

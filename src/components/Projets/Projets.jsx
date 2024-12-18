@@ -1,41 +1,30 @@
 import './Projets.scss'
-import {useRef} from "react";
+import ProjetArticle from '../ProjetArticle/ProjetArticle';
 import Booki from '../../assets/Booki.webp'
 import NinaCarducci from '../../assets/NinaCarducci.webp'
+import SophieBluel from '../../assets/SophieBluel.webp'
 
 function Projets() {
-    const showButtonRef = useRef(null);
-    const dialogRef = useRef(null);
-
-  const handleClick = () => {
-    dialogRef.current.showModal();
-  };
     return(
         <section id='projects'>
-            <h2>Mes projets (experiense?)</h2>
+            <h2>Mes projets</h2>
             <div className='projects-div'>
-                <article className='project-article'>
-                    <button ref={showButtonRef} onClick={handleClick}>
-                    <img src={Booki} alt="Print écran du ma version de Booki"></img>
-                </button>
-                <dialog ref={dialogRef}>
-                    <img src={Booki} alt="Print écran du ma version de Booki"></img>
-                    <p>Text en rapport avec Booki</p>
-                    <button onClick={() => dialogRef.current.close()}>Fermer</button>
-                </dialog>
-                </article>
-                <article className='project-article'>
-                    <button ref={showButtonRef} onClick={handleClick}>
-                        <img src={NinaCarducci} alt="Print écran du site Nina Carducci"></img>
-                    </button>
-                    <dialog ref={dialogRef}>
-                        <img src={Booki} alt="Print écran du site Nina Carducci"></img>
-                        <p>Text en rapport avec Nina Carducci</p>
-                        <button onClick={() => dialogRef.current.close()}>Fermer</button>
-                    </dialog>
-                </article>
+                <ProjetArticle
+                    imgSrc={Booki}
+                    imgAlt={'Capture écran du site web Booki'}
+                    text={'Projet Booki'}
+                />
+                <ProjetArticle
+                    imgSrc={SophieBluel}
+                    imgAlt={'Capture écran du site web Sophie Bluel'}
+                    text={'Projet Sophie Bluel'}
+                />
+                <ProjetArticle
+                    imgSrc={NinaCarducci}
+                    imgAlt={'Capture écran du site web Nina Carducci'}
+                    text={'Projet Sophie Bluel'}
+                />
             </div>
-            
         </section>
     )
 }

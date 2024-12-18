@@ -1,5 +1,5 @@
 #about {
-    margin: 3em 2em;
+    margin: 6em 2em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -12,6 +12,7 @@
     & .banner-div-titre {
         margin: 0 1%;
         width: 55%;
+        color: #0000009f;
         & .banner-h1 {
         font-size: 3.7em;
         margin: auto;
@@ -38,7 +39,7 @@
     #about {
         flex-direction: column;
         & .photo-de-profil {
-            max-width: 350px;
+            max-width: 300px;
         }
         & .banner-div-titre {
             width: 100%;
