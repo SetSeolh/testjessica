@@ -2,6 +2,8 @@ import './App.css'
 import Header from "./components/Header/Header";
 import Presentation from './components/Presentation/Presentation';
 import Competences from './components/Competences/Competences';
+import Projets from './components/Projets/Projets';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <main className='main-home'>
         <Presentation />
         <Competences />
+        <Projets />
+        <Contact />
       </main>
     </div>
   );

@@ -1,10 +1,82 @@
 #skills {
-    margin: 3em 0;
+    margin: 3em 2em;
+    & h2{
+        color: coral;
+    }
     & .skills-div {
         display: flex;
-        & figcaption {
+        justify-content: space-evenly;
+        & figure {
             text-align: center;
-            margin: 1em;
+            margin: 0;
+            & .img-skills-frontend {
+                max-width: 100%;
+            }
+            & .img-skills-backend {
+                max-width: 100%;
+            }
+            & figcaption {
+                text-align: center;
+                margin: 1em;
+            }
+        }     
+    }
+    & .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        & .container, div {
+            margin: 1rem;
+            text-align: justify;
+            & h3{
+            color: aquamarine;
+            } 
+        }
+        
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #skills {
+        & .skills-div {
+            flex-direction: column;
+            align-items: center;
+            & figure {
+                & .img-skills-frontend {
+                    max-width: 80%;
+                }
+                & .img-skills-backend {
+                    max-width: 80%;
+                }
+            }
+        }
+        & .container {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    #skills {
+        & h2{
+            text-align: center;
+        }
+        & .skills-div {
+            flex-direction: column;
+            align-items: center;
+            & figure {
+                & .img-skills-frontend {
+                    max-width: 80%;
+                }
+                & .img-skills-backend {
+                    max-width: 80%;
+                }
+            }
+        }
+        & .container {
+            display: flex;
+            flex-direction: column;
+            & .container, div{
+                border: 1em solid aliceblue;
+            }
         }
     }
 }

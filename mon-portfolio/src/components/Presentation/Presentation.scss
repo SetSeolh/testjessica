@@ -1,7 +1,6 @@
-.banner {
-    margin: 3em 0;
+#about {
+    margin: 3em 2em;
     display: flex;
-    width: 100%;
     justify-content: space-around;
     align-items: center;
     & .photo-de-profil {
@@ -15,7 +14,6 @@
         width: 55%;
         & .banner-h1 {
         font-size: 3.7em;
-        background-color: bisque;
         margin: auto;
         }
         & .banner-p {
@@ -23,6 +21,31 @@
             font-size: large;
         }
     }
-    
-    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #about {
+        & .div-photo-de-profil {
+            width: auto;
+        }
+        & .banner-div-titre {
+            width: 65%;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    #about {
+        flex-direction: column;
+        & .photo-de-profil {
+            max-width: 350px;
+        }
+        & .banner-div-titre {
+            width: 100%;
+            & .banner-h1 {
+                text-align: center;
+                margin: 3rem 0;
+            }
+        }
+    }
 }
